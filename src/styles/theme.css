@@ -1,0 +1,34 @@
+@keyframes fade-rise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-rise {
+  animation: fade-rise 0.8s ease-out both;
+}
+
+.animate-fade-rise-delay {
+  animation: fade-rise 0.8s ease-out 0.2s both;
+}
+
+.animate-fade-rise-delay-2 {
+  animation: fade-rise 0.8s ease-out 0.4s both;
+}
+
+@keyframes aurora-border {
+  0%, 100% { background-position: 0% 50%; }
+  33%       { background-position: 60% 0%; }
+  66%       { background-position: 100% 50%; }
+}
+
+.aurora-glow {
+  background: linear-gradient(135deg, #a855f7, #22d3ee, #34d399, #ec4899, #a855f7);
+  background-size: 300% 300%;
+  animation: aurora-border 5s ease infinite;
+}
